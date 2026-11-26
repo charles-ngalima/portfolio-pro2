@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djibril Tumbaku | Consultant en Marketing Digital à Kinshasa</title>
+    <meta name="description" content="Portfolio de Djibril Tumbaku, expert en stratégie digitale, Social Media, Publicité Meta/Google Ads et acquisition client à Kinshasa, RDC.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: {
+                            950: '#07090E',
+                            900: '#0D111A',
+                            800: '#151B28',
+                            700: '#1F293D',
+                        },
+                        accent: {
+                            DEFAULT: '#F59E0B', // Ambre doré élégant
+                            light: '#FBBF24',
+                            glow: 'rgba(245, 158, 11, 0.15)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-dark-950">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-dark-950 font-display font-extrabold text-xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition">
+                        DT
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-lg tracking-tight text-white leading-none">Djibril Tumbaku</span>
+                        <span class="text-[11px] text-amber-400 font-medium tracking-widest uppercase mt-1">Marketing Digital</span>
+                    </div>
+                </a>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                    <a href="#apropos" class="hover:text-amber-400 transition">À propos</a>
+                    <a href="#services" class="hover:text-amber-400 transition">Services</a>
+                    <a href="#projets" class="hover:text-amber-400 transition">Études de cas</a>
+                    <a href="#temoignages" class="hover:text-amber-400 transition">Avis clients</a>
+                </nav>
+
+                <!-- Bouton CTA & Menu Mobile -->
+                <div class="flex items-center gap-4">
+                    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500 hover:bg-amber-400 text-dark-950 font-semibold text-sm transition shadow-lg shadow-amber-500/20">
+                        <span>Démarrer un projet</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </a>
+                    
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-300 hover:bg-dark-800 hover:text-white transition" aria-label="Menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Déroulant -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900 border-b border-white/10 px-4 py-6 space-y-4">
+            <a href="#apropos" class="block text-gray-300 hover:text-amber-400 font-medium py-1">À propos</a>
+            <a href="#services" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Services</a>
+            <a href="#projets" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Études de cas</a>
+            <a href="#temoignages" class="block text-gray-300 hover:text-amber-400 font-medium py-1">Avis clients</a>
+            <a href="#contact" class="block w-full text-center px-5 py-3 rounded-xl bg-amber-500 text-dark-950 font-bold mt-4">
+                Discutons sur WhatsApp / Email
+            </a>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-28 bg-glow overflow-hidden">
+        <!-- Cercles décoratifs subtils -->
+        <div class="absolute top-20 right-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Texte Hero -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-dark-800/80 border border-white/10 text-xs sm:text-sm font-medium text-amber-400">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        Basé à Kinshasa, RDC • Disponible pour de nouveaux mandats
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+                        Transformez votre visibilité en <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-500 to-orange-400">chiffre d'affaires réel.</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-gray-400 max-w-2xl leading-relaxed">
+                        Je suis <strong class="text-white">Djibril Tumbaku</strong>, stratège en marketing digital. J'aide les entreprises, marques et entrepreneurs à Kinshasa et en Afrique centrale à capter l'attention, dominer les réseaux sociaux et convertir leurs audiences en clients fidèles.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-dark-950 font-bold text-base transition shadow-xl shadow-amber-500/20">
+                            <span>Demander un audit gratuit</span>
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#projets" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-dark-800 hover:bg-dark-700 text-white border border-white/10 font-semibold text-base transition">
+                            <span>Voir mes réalisations</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+
+                    <!-- Chiffres Clés -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-lg">
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-bold text-white">+40</div>
+                            <div class="text-xs sm:text-sm text-gray-400 mt-1">Marques accompagnées</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-bold text-amber-400">3.8x</div>
+                            <div class="text-xs sm:text-sm text-gray-400 mt-1">ROI moyen sur Ads</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-bold text-white">+5 ans</div>
+                            <div class="text-xs sm:text-sm text-gray-400 mt-1">D'expérience terrain</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte Visuelle / Portrait -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Cadre décoratif arrière -->
+                        <div class="absolute -inset-1 bg-gradient-to-tr from-amber-500 to-blue-600 rounded-3xl blur opacity-30"></div>
+                        
+                        <div class="relative glass-card rounded-3xl p-4 sm:p-5 overflow-hidden">
+                            <!-- Zone Photo : Remplacez la div ci-dessous par <img src="votre-photo.jpg" ...> -->
+                            <div class="aspect-[4/5] rounded-2xl bg-gradient-to-b from-dark-700 to-dark-900 relative overflow-hidden flex flex-col items-center justify-center border border-white/5 group">
+                            
+                                <img src="images/pexels-travel-with-lenses-734723610-36687795.webp" alt="Djibril Tumbaku" class="w-full h-full object-cover"> 
+                                
+                                <!-- Placeholder stylisé en attendant sa vraie photo -->
+                                <div class="w-28 h-28 rounded-full bg-amber-500/10 border-2 border-amber-500/40 flex items-center justify-center mb-4">
+                                    <i data-lucide="user" class="w-12 h-12 text-amber-400"></i>
+                                </div>
+                                <span class="font-display font-bold text-xl text-white">Djibril Tumbaku</span>
+                                <span class="text-sm text-gray-400 mt-1">Digital Marketing Strategist</span>
+                                <span class="mt-4 px-3 py-1 rounded-full bg-white/5 text-[11px] text-gray-400 border border-white/10">
+                                    Emplacement Photo Portrait
+                                </span>
+
+                                <!-- Badge flottant performance -->
+                                <div class="absolute bottom-4 left-4 right-4 glass-card p-3.5 rounded-xl flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                                            <i data-lucide="trending-up" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-gray-400">Croissance clients</div>
+                                            <div class="text-sm font-bold text-white">+145% cette année</div>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">Kinshasa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BANDEAU SECTEURS (MARQUEE) ================= -->
+    <div class="border-y border-white/5 bg-dark-900/50 py-5 overflow-hidden">
+        <div class="animate-marquee flex items-center gap-12 text-gray-400 font-display font-medium text-sm uppercase tracking-widest">
+            <span class="flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-amber-500"></i> Immobilier Gombe & Ngaliema</span>
+            <span class="flex items-center gap-2"><i data-lucide="shopping-bag" class="w-4 h-4 text-amber-500"></i> E-Commerce & Retail</span>
+            <span class="flex items-center gap-2"><i data-lucide="landmark" class="w-4 h-4 text-amber-500"></i> Fintech & Mobile Money</span>
+            <span class="flex items-center gap-2"><i data-lucide="utensils" class="w-4 h-4 text-amber-500"></i> Hôtellerie & Restauration</span>
+            <span class="flex items-center gap-2"><i data-lucide="graduation-cap" class="w-4 h-4 text-amber-500"></i> Éducation & Événementiel</span>
+            <!-- Répétition pour boucle fluide -->
+            <span class="flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-amber-500"></i> Immobilier Gombe & Ngaliema</span>
+            <span class="flex items-center gap-2"><i data-lucide="shopping-bag" class="w-4 h-4 text-amber-500"></i> E-Commerce & Retail</span>
+            <span class="flex items-center gap-2"><i data-lucide="landmark" class="w-4 h-4 text-amber-500"></i> Fintech & Mobile Money</span>
+            <span class="flex items-center gap-2"><i data-lucide="utensils" class="w-4 h-4 text-amber-500"></i> Hôtellerie & Restauration</span>
+            <span class="flex items-center gap-2"><i data-lucide="graduation-cap" class="w-4 h-4 text-amber-500"></i> Éducation & Événementiel</span>
+        </div>
+    </div>
+
+    <!-- ================= À PROPOS ================= -->
+    <section id="apropos" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center reveal">
+                
+                <div class="space-y-6">
+                    <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">À propos de moi</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Le marketing digital pensé pour les réalités du marché congolais.
+                    </h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        À Kinshasa, les consommateurs sont hyper-connectés sur mobile, réactifs sur WhatsApp, exigeants sur Facebook, Instagram et TikTok. Pour réussir ici, copier des stratégies venues d'ailleurs ne suffit pas : il faut comprendre la culture locale, les habitudes d'achat et les leviers de confiance.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        J'accompagne les PME, les grandes entreprises et les personnalités publiques en combinant <strong class="text-white">créativité éditoriale</strong> et <strong class="text-white">précision analytique</strong>. Chaque franc investi dans vos campagnes est suivi pour garantir un retour mesurable.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400 mt-0.5">
+                                <i data-lucide="target" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Orienté Résultats</h4>
+                                <p class="text-sm text-gray-400">Des leads qualifiés et des ventes, pas juste des "likes".</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400 mt-0.5">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Expertise Locale</h4>
+                                <p class="text-sm text-gray-400">Ciblage précis sur Kinshasa, Lubumbashi & la diaspora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétences / Stack -->
+                <div class="glass-card rounded-3xl p-8 space-y-6">
+                    <h3 class="font-display text-xl font-bold text-white flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-5 h-5 text-amber-400"></i>
+                        Écosystème & Outils Maîtrisés
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1.5">
+                                <span class="font-medium text-gray-200">Meta Ads (Facebook & Instagram)</span>
+                                <span class="text-amber-400 font-semibold">95%</span>
+                            </div>
+                            <div class="h-2 bg-dark-900 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-amber-500 to-orange-400 w-[95%] rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-1.5">
+                                <span class="font-medium text-gray-200">Stratégie de Contenu & TikTok Marketing</span>
+                                <span class="text-amber-400 font-semibold">90%</span>
+                            </div>
+                            <div class="h-2 bg-dark-900 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-amber-500 to-orange-400 w-[90%] rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-1.5">
+                                <span class="font-medium text-gray-200">Google Ads & SEO Local (Google Maps)</span>
+                                <span class="text-amber-400 font-semibold">85%</span>
+                            </div>
+                            <div class="h-2 bg-dark-900 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-amber-500 to-orange-400 w-[85%] rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-1.5">
+                                <span class="font-medium text-gray-200">Tunnels WhatsApp Business & CRM</span>
+                                <span class="text-amber-400 font-semibold">92%</span>
+                            </div>
+                            <div class="h-2 bg-dark-900 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-amber-500 to-orange-400 w-[92%] rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="py-24 bg-dark-900/40 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Mes Expertises</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">
+                    Des solutions sur mesure pour accélérer votre croissance
+                </h2>
+                <p class="text-gray-400 mt-4">
+                    Chaque service est conçu pour bâtir votre autorité en ligne et générer un flux constant d'opportunités commerciales.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/40 transition duration-300 group reveal">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="megaphone" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Publicité Digitale (Media Buying)</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Création, ciblage avancé et optimisation de campagnes sponsorisées sur Facebook, Instagram, TikTok et Google Ads pour maximiser votre retour sur investissement.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Ciblage géo-localisé (Gombe, Limete, etc.)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> A/B Testing des visuels et messages</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/40 transition duration-300 group reveal">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="share-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Social Media Management</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Gestion complète de votre image de marque sur les réseaux sociaux : ligne éditoriale, création de Reels percutants, carrousels et animation de communauté.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> Calendrier éditorial mensuel</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> Reporting mensuel détaillé</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/40 transition duration-300 group reveal">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Tunnels WhatsApp & Conversion</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transformation de vos abonnés en acheteurs grâce à des systèmes automatisés de capture de leads directement connectés à votre WhatsApp Business.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Pages de capture haute conversion</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Scripts de vente & suivi client</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/40 transition duration-300 group reveal">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="search" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">SEO & Visibilité Locale</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Positionnez votre entreprise en tête des recherches Google à Kinshasa et optimisez votre fiche Google Business Profile pour attirer du trafic qualifié.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Optimisation Google Maps RDC</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Audit technique de site web</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/40 transition duration-300 group reveal">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="award" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Personal Branding (LinkedIn)</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Accompagnement des dirigeants, experts et décideurs congolais pour bâtir une réputation influente sur LinkedIn et attirer des partenariats B2B.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Ghostwriting & Positionnement</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Réseautage stratégique</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-amber-500/40 transition duration-300 group reveal">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Conseil & Formation d'Équipe</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Audit complet de votre présence actuelle et formation pratique de vos équipes marketing internes aux meilleures pratiques actuelles.
+                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Ateliers pratiques sur site à Kinshasa</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Feuille de route trimestrielle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PORTFOLIO / ÉTUDES DE CAS ================= -->
+    <section id="projets" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal">
+                <div>
+                    <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Portfolio</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">
+                        Études de cas & Résultats récents
+                    </h2>
+                </div>
+
+                <!-- Filtres interactifs -->
+                <div class="flex flex-wrap gap-2" id="portfolio-filters">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-full text-xs font-semibold bg-amber-500 text-dark-950 transition">Tous</button>
+                    <button data-filter="ads" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-dark-800 text-gray-300 hover:bg-dark-700 transition">Publicité Ads</button>
+                    <button data-filter="social" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-dark-800 text-gray-300 hover:bg-dark-700 transition">Social Media</button>
+                    <button data-filter="seo" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-dark-800 text-gray-300 hover:bg-dark-700 transition">Stratégie & SEO</button>
+                </div>
+            </div>
+
+            <!-- Grille de Projets -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <!-- Projet 1 -->
+                <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col group reveal" data-category="ads">
+                    <div class="h-52 bg-gradient-to-br from-slate-800 via-dark-800 to-amber-900/40 relative p-6 flex flex-col justify-between border-b border-white/5">
+                        <div class="flex justify-between items-start">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold border border-amber-500/20">Immobilier • Gombe</span>
+                            <i data-lucide="building" class="w-6 h-6 text-amber-400/60"></i>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-display font-extrabold text-white">+240 Leads</div>
+                            <div class="text-xs text-gray-300">qualifiés générés en 30 jours</div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-display text-lg font-bold text-white group-hover:text-amber-400 transition">Lancement Résidence Haut Standing</h3>
+                            <p class="text-sm text-gray-400 mt-2 leading-relaxed">
+                                Campagne Meta Ads ciblant les cadres expatriés, dirigeants locaux et la diaspora congolaise avec formulaire instantané et relance WhatsApp.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+                            <span>Meta Ads • Tunnel WhatsApp</span>
+                            <span class="text-emerald-400 font-semibold">Coût/lead : -42%</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col group reveal" data-category="social">
+                    <div class="h-52 bg-gradient-to-br from-indigo-950 via-dark-800 to-blue-900/40 relative p-6 flex flex-col justify-between border-b border-white/5">
+                        <div class="flex justify-between items-start">
+                            <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold border border-blue-500/20">Mode & E-commerce</span>
+                            <i data-lucide="shopping-cart" class="w-6 h-6 text-blue-400/60"></i>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-display font-extrabold text-white">+185%</div>
+                            <div class="text-xs text-gray-300">d'augmentation des commandes mensuelles</div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-display text-lg font-bold text-white group-hover:text-amber-400 transition">Boutique Mode & Accessoires Kinshasa</h3>
+                            <p class="text-sm text-gray-400 mt-2 leading-relaxed">
+                                Refonte complète de la stratégie TikTok et Instagram Reels avec collaborations d'influenceurs kinois et catalogue WhatsApp optimisé.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+                            <span>TikTok • Instagram Reels</span>
+                            <span class="text-emerald-400 font-semibold">1.2M vues organiques</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 3 -->
+                <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col group reveal" data-category="seo">
+                    <div class="h-52 bg-gradient-to-br from-emerald-950 via-dark-800 to-teal-900/40 relative p-6 flex flex-col justify-between border-b border-white/5">
+                        <div class="flex justify-between items-start">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/20">Services B2B & Clinique</span>
+                            <i data-lucide="globe" class="w-6 h-6 text-emerald-400/60"></i>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-display font-extrabold text-white">Top 3 Google</div>
+                            <div class="text-xs text-gray-300">sur 12 mots-clés stratégiques en RDC</div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-display text-lg font-bold text-white group-hover:text-amber-400 transition">Visibilité Google & Acquisition B2B</h3>
+                            <p class="text-sm text-gray-400 mt-2 leading-relaxed">
+                                Optimisation SEO local, gestion de la fiche Google Maps et campagne Google Search pour capter les demandes entrantes à forte intention d'achat.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+                            <span>Google Ads • SEO Local</span>
+                            <span class="text-emerald-400 font-semibold">+310 appels/mois</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MÉTHODOLOGIE ================= -->
+    <section class="py-20 bg-dark-900/40 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+                <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Processus de travail</span>
+                <h2 class="font-display text-3xl font-bold text-white mt-2">Comment nous travaillons ensemble</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-dark-800/40 border border-white/5 relative reveal">
+                    <span class="font-display text-5xl font-extrabold text-white/5 absolute top-4 right-5">01</span>
+                    <h3 class="font-display font-bold text-white text-lg mb-2">Audit & Diagnostic</h3>
+                    <p class="text-sm text-gray-400">Analyse de votre marque, de vos concurrents à Kinshasa et des opportunités rapides.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-dark-800/40 border border-white/5 relative reveal">
+                    <span class="font-display text-5xl font-extrabold text-white/5 absolute top-4 right-5">02</span>
+                    <h3 class="font-display font-bold text-white text-lg mb-2">Plan d'Action</h3>
+                    <p class="text-sm text-gray-400">Définition des canaux, du budget publicitaire et des messages clés qui convertissent.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-dark-800/40 border border-white/5 relative reveal">
+                    <span class="font-display text-5xl font-extrabold text-white/5 absolute top-4 right-5">03</span>
+                    <h3 class="font-display font-bold text-white text-lg mb-2">Déploiement</h3>
+                    <p class="text-sm text-gray-400">Lancement des contenus et campagnes avec suivi rigoureux des clics et messages.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-dark-800/40 border border-white/5 relative reveal">
+                    <span class="font-display text-5xl font-extrabold text-white/5 absolute top-4 right-5">04</span>
+                    <h3 class="font-display font-bold text-white text-lg mb-2">Optimisation & ROI</h3>
+                    <p class="text-sm text-gray-400">Rapports clairs, ajustements hebdomadaires et scaling de ce qui rapporte le plus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TÉMOIGNAGES ================= -->
+    <section id="temoignages" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Témoignages</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Ce que disent mes clients</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between reveal">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed italic">
+                            "Avant de travailler avec Djibril, nous dépensions de l'argent en boost Facebook sans vrai résultat. En deux mois, il a structuré nos campagnes et rempli notre agenda de visites immobilières."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-dark-700 flex items-center justify-center font-bold text-amber-400 text-sm">PK</div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Patrick Kabamba</div>
+                            <div class="text-xs text-gray-400">Directeur, Immo Horizon Kin</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between reveal">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed italic">
+                            "Sa compréhension du public kinois est impressionnante. Nos vidéos Reels ont explosé et les clients passent commande directement sur WhatsApp tous les jours."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-dark-700 flex items-center justify-center font-bold text-amber-400 text-sm">SN</div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Sarah Ngalula</div>
+                            <div class="text-xs text-gray-400">Fondatrice, Élégance Kinshasa</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between reveal">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed italic">
+                            "Un professionnel rigoureux, ponctuel dans ses rapports et transparent sur les chiffres. Je recommande Djibril à toute entreprise sérieuse en RDC."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-dark-700 flex items-center justify-center font-bold text-amber-400 text-sm">CM</div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Christian Mbuyi</div>
+                            <div class="text-xs text-gray-400">CEO, Congo Tech Solutions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT & CTA ================= -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-amber-500/5 to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-white/10 reveal">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    
+                    <!-- Infos de Contact -->
+                    <div class="space-y-8">
+                        <div>
+                            <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Parlons de vos objectifs</span>
+                            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">
+                                Prêt à faire passer votre entreprise au niveau supérieur ?
+                            </h2>
+                            <p class="text-gray-400 mt-4 leading-relaxed">
+                                Réservez une session découverte gratuite de 20 minutes (en présentiel à Kinshasa ou en visioconférence) pour analyser votre stratégie actuelle.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <a href="https://wa.me/243800000000" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500/20 transition group">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-500 text-dark-950 flex items-center justify-center">
+                                    <i data-lucide="message-square" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-emerald-300 font-semibold uppercase">Réponse rapide</div>
+                                    <div class="text-white font-bold group-hover:underline">Écrire sur WhatsApp (+243 8X XXX XXXX)</div>
+                                </div>
+                            </a>
+
+                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-dark-800/60 border border-white/5">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-400">Email professionnel</div>
+                                    <div class="text-white font-medium">contact@djibriltumbaku.cd</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-dark-800/60 border border-white/5">
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-400">Localisation</div>
+                                    <div class="text-white font-medium">Commune de la Gombe, Kinshasa, RDC</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire Interactif -->
+                    <form id="contact-form" class="space-y-5 bg-dark-900/60 p-6 sm:p-8 rounded-2xl border border-white/5">
+                        <h3 class="font-display text-xl font-bold text-white mb-2">Envoyer un message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-400 mb-1.5">Nom complet</label>
+                                <input type="text" required placeholder="Ex: Jean Mukendi" class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-400 mb-1.5">Téléphone / WhatsApp</label>
+                                <input type="tel" required placeholder="+243 ..." class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-gray-400 mb-1.5">Service souhaité</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition text-sm">
+                                <option>Gestion des réseaux sociaux (Social Media)</option>
+                                <option>Campagnes Publicitaires (Meta / Google / TikTok Ads)</option>
+                                <option>Stratégie globale & Audit digital</option>
+                                <option>Personal Branding / Formation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-gray-400 mb-1.5">Détails de votre projet</label>
+                            <textarea rows="4" required placeholder="Parlez-moi brièvement de votre activité et de vos objectifs..." class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-dark-950 font-bold text-sm transition shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
+                            <span>Envoyer ma demande</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+
+                        <div id="form-success" class="hidden p-4 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-sm text-center">
+                            Merci ! Votre message a bien été préparé. Djibril vous répondra sous 24h.
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-white/10 py-10 bg-dark-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-sm text-gray-400">
+                © <span id="year"></span> <strong class="text-white">WAZAMANY STUDIO</strong>. Tous droits réservés • Kinshasa, RDC.
+            </div>
+            
+            <!-- Réseaux Sociaux -->
+            <div class="flex items-center gap-4">
+                <a href="#" aria-label="LinkedIn" class="p-2 rounded-lg bg-dark-800 text-gray-400 hover:text-amber-400 hover:bg-dark-700 transition">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="p-2 rounded-lg bg-dark-800 text-gray-400 hover:text-amber-400 hover:bg-dark-700 transition">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                </a>
+                <a href="#" aria-label="Facebook" class="p-2 rounded-lg bg-dark-800 text-gray-400 hover:text-amber-400 hover:bg-dark-700 transition">
+                    <i data-lucide="facebook" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
